@@ -235,6 +235,16 @@
         transition-duration: 0.3s;
         transition-delay: 0s;
     }
+
+    .div-icons{
+        height: 280px;
+    }
+    .icons{
+        width: 50px;
+        height: 50px;
+        margin: 5px 5px;
+        margin-left: 10px;
+    }
 }
 
 @media (max-width: 430px){
