@@ -115,6 +115,7 @@
         display: inline-block;
         text-align: start;
         margin: 13px;
+        margin-top: 3px;
     }
 
     .menu-responsivo {
@@ -237,10 +238,10 @@
     }
 
     .div-icons{
-        height: 280px;
+        height: 230px;
     }
     .div-icons h2{
-        font-size: 10px;
+        font-size: 30px;
         font-weight: bold;
         display: flex;
         text-align: center;
@@ -249,9 +250,9 @@
     }
     .icons{
         width: 35px;
-        height: 35px;
+        height: 42px;
         margin: 5px 5px;
-        margin-left: 8px;
+        margin-left: 12px;
     }
 }
 
