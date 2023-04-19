@@ -195,7 +195,7 @@ header{
 .projetos {
     background-color: var(--corfundo2);
     text-align: center;
-    padding: 20px 0px 100px;
+    padding: 20px 0px 50px;
 }
 
 .projetos .container-projetos {
