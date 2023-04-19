@@ -199,7 +199,7 @@
 
     .rodape {
         padding: 7px;
-        font-size: 9px;
+        font-size: 13px;
     }
 }
 
@@ -209,6 +209,10 @@
         width: 40%;
         margin-left: 150px;
         overflow: hidden;
+    }
+
+    .github {
+        font: 15px;
     }
 
     .contatos .info-contato .computador{
