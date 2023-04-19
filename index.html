@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/anima.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/css/estilo.css">
+    <link rel="stylesheet" href="src/css/responsividade.css">
+    <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
+    <title>Matheus Matos Rodrigues | Portfólio</title>
+</head>
+<body onresize="removerBtn()">
+    <header class="cabecalho">
+        <div class="menu-geral">
+            <a href="#inicio"><img id="logo-m" src="src/img/logo m.jpg" alt="logo 'M'"></a>
+              <!--navegação-->
+            <nav>
+                <div class="menu-padrao">
+                    <ul class="menu">
+                        <li>
+                            <a href="#inicio">Home</a>
+                        </li>
+                        <li>
+                            <a href="#sobremim">Sobre Mim</a>
+                        </li>
+                        <li>
+                            <a href="#projetos">Projetos Pessoais</a>
+                        </li>
+                        <li>
+                            <a href="#contatos">Contatos</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn-menu" onclick="openMenu()">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </button>
+                <div class="menu-responsivo">
+                    <span class="btn-fecha-menu" onclick="fechaMenu()">&times;</span>
+                    <ul class="menu">
+                        <li>
+                            <a href="#inicio" onclick="fechaMenu()">Home</a>
+                        </li>
+                        <li>
+                            <a href="#sobremim" onclick="fechaMenu()">Sobre Mim</a>
+                        </li>
+                        <li>
+                            <a href="#projetos" onclick="fechaMenu()">Projetos Pessoais</a>
+                        </li>
+                        <li>
+                            <a href="#contatos" onclick="fechaMenu()">Contatos</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+        <!----home---->
+    <main>
+        <section class="ini">
+            <div class="inicio" id="inicio">
+                <!--parte inicial do portfolio-->
+                <div class="txt">
+                    <h1 id="apresenta">
+                        Olá, bem vindo(a) ao meu portfólio
+                    </h1>
+                    <p id="apresentacao">Matheus Matos Rodrigues,<br>
+                        Desenvolvedor Front-End <br>
+                        com paixão por lógica</p>
+                    <button id="botao-inicio" class="botao" onclick="chamarlinkedin()">Conhecer mais do Dev</button>
+               </div>
+               <img id="mauricio" src="src/img/matheus.jpeg" alt="Foto Matheus">
+            </div>
+        </section>
+           <!--  ---------- sobre mim -----------  -->
+        <section class="s-sobremim">
+            <article>
+                <div class="SobreMim" id="sobremim">
+                    <img id="img-sobremim" src="src/img/coffe.png" alt="desenvolvedor codando">
+                    <div class="info-sobremim" data-anima="right">
+                        <h1>Matheus Matos Rodrigues</h1>
+                        <p>Nascido em Vitória - ES. <br>
+                        Tenho 20 anos, resido em Praia de Carapebus na Serra - Espirito Santo e sou um desenvolvedor frontend graduando em Análise e Desenvolvimento de Sistemas (2022 - 2024). <br>
+                        Desenvolvo utilizando sobretudo <strong id="bold"> Javascript (React, TypeScript), HTML5, CSS3</strong> <br>
+                        Sempre fui um grande admirador da tecnologia, de enigmas, e desafios de lógica. Vejo minhas paixões refletidas na programação, e talvez por isso eu esteja tão ansioso e animado.
+                        Comecei a estudar programação em dezembro de 2021, antes de começar a faculdade, e continuo até hoje por prazer e satisfação.</p>
+                        <button onclick="chamarlinkedin()">Linkedin</button>
+                        <button onclick="chamarGithub2()">Github</button>
+                        <a href="src/pdf/curriculo-matheus-matos.pdf" download="CV Matheus Matos.pdf" type="application/pdf"><button><span class="material-icons">file_download</span> Download CV</button></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+         <!-- --------  projetos ---------- -->
+        <section>
+            <div class="projetos" id="projetos">
+                <h1 data-anima="up">Principais Projetos</h1>
+                <div class="container-projetos" data-anima="up">
+                    <div class="insta">
+                        <a href="https://github.com/matheusmatosr/sistema-de-chamadas" target="_blank">
+                            <abbr title="Projeto voltado para o frontend para criar um sistema de chamadas">
+                                <img src="src/img/sistema.png" alt="fanpage hogwarts legacy">
+                            </abbr>
+                        </a>
+                        <button onclick="chamarSistema()">Sistema de chamadas</button>
+                    </div>
+                    <div class="breve">
+                        <a href="https://imaginative-pithivier-189a8e.netlify.app/" target="_blank">
+                            <abbr title="Controle de fluxos de gastos">
+                                <img id="" src="src/img/financeiro.png" alt="imagem sobre dark souls">
+                            </abbr>
+                        </a>
+                        <button onclick="chamarFinanceiro()">Controle financeiro</button>
+                    </div>
+                    <div class="insta">
+                        <a href="https://remarkable-flan-ac674a.netlify.app/" target="_blank">
+                            <abbr title="Antigo portifolio pessoal">
+                                <img id="insta-img" src="src/img/portifolio.png" alt="cópia do instagram">
+                            </abbr>
+                        </a>
+                        <button onclick="chamarPortifolio()">Antigo portifolio</button>
+                    </div>
+                </div>
+                <!---------------- projetos escondidos ----------------->
+                <div class="container-projetos" id="div-escondido" data-anima="up">
+                    <div class="mario">
+                        <a href="https://matheusmatosr.github.io/Cuidados_covid---HTML-CSS/" target="_blank">
+                            <abbr title="Projeto sobre uma landing page de cuidados relacionados a covid 19">
+                                <img id="mario-img" src="src/img/covid.png" alt="pagina sobre o mário">
+                            </abbr>
+                        </a>
+                        <button onclick="chamarCovid()">Cuidados covid</button>
+                    </div>
+                    <div class="enigma">
+                        <a href="https://melodic-paprenjak-73f8f2.netlify.app/filme/502356" target="_blank">
+                            <abbr title="Consumo de uma api de filmes">
+                                <img id="enigma-img" src="src/img/matosflix.png" alt="jogo de enigmas">
+                            </abbr>
+                        </a>
+                        <button onclick="chamarMatosflix()">Matosflix: filmes em cartaz</button>
+                    </div>
+                    <div class="breve">
+                        <a href="https://matheusmatosr.github.io/projeto-museu--HTML-CSS/" target="_blank">
+                            <abbr title="Página sobre um museu utilizando HTML e CSS">
+                                <img id="breve-img" src="src/img/museu.png" alt="imagem layout página do percy jackson">
+                            </abbr>
+                        </a>
+                        <button onclick="chamarMuseu()">Museu nacional</button>
+                    </div>
+                </div>
+                <!---------------- projetos escondidos / end ----------------->
+                <div data-anima="up">
+                    <button onclick="vermais()" id="ver">ver mais</button>
+                </div>
+                <div class="git" data-anima="up">
+                    <button class="github" onclick="chamarGithub()">Repositórios no Github</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Linguagens -->
+        <section class="container-icons">
+            <div class="div-icons" id="div-icons">
+                <h2 data-anima="down">Tecnologias</h2>
+                <a target="_blank"><img class="icons" src="src/img/html.png" alt="ícone do html"></a>
+                <a target="_blank"><img class="icons" src="src/img/css.png" alt="ícono do css"></a>
+                <a target="_blank"><img class="icons" src="src/img/js.png" alt="icone do Javascript"></a>
+                <a target="_blank"><img class="icons" src="src/img/react.png" alt="icone do react"></a>
+                <a target="_blank"><img class="icons" src="src/img/java.png" alt="icone do java"></a>
+                <a target="_blank"><img class="icons" src="src/img/csharp.webp" alt="icone do csharp"></a>
+                <a target="_blank"><img class="icons" src="src/img/python.webp" alt="icone do python"></a>
+            </div>
+        </section>
+        
+        <!--    ---------- contatos --------------    -->
+        <section class="container-contatos">
+            <div class="contatos" id="contatos">
+                <h1 data-anima="down">
+                    Contatos
+                </h1>
+                <div class="contatos-container">
+                    <div class="info-contato">
+                        <div class="info-txt" data-anima="left">
+                            <p> 
+                                Entre em contato comigo para conversar, estarei esperando!
+                            </p>
+                            <p id="paragrafo">Email: matheusmatos@ucl.br</p>
+                            <div class="div-icones">
+                                <a href="https://github.com/matheusmatosr" target="_blank"><img class="icones" src="src/img/branco-placa-do-github.png" alt="ícone do github"></a>
+                                <a href="https://www.instagram.com/mtzinnn7/" target="_blank"><img class="icones" src="src/img/branco-logotipo-do-instagram.png" alt="ícono do instagram"></a>
+                                <a href="https://www.linkedin.com/in/matheus-matos-1a523221b/" target="_blank"><img class="icones" src="src/img/branco-logotipo-do-linkedin.png" alt="icone do linkedin"></a>
+                            </div>
+                        </div>
+                        <img class="computador" src="src/img/computador.png" alt="imagem computador com café" data-anima="right">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+       <!--  ---------  rodapé  -------- -->
+    <footer class="rodape">
+        <div class="direitos">
+            <p>Desenvolvido por Matheus Matos Rodrigues</p>
+            <p>@ 2023 Portfólio</p>
+        </div>
+    </footer>
+    <script src="src/js/animacoes.js"></script>
+    <script src="src/js/chamadas.js"></script>
+</body>
+</html>
