@@ -239,11 +239,19 @@
     .div-icons{
         height: 280px;
     }
+    .div-icons h2{
+        font-size: 10px;
+        font-weight: bold;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
     .icons{
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
         margin: 5px 5px;
-        margin-left: 10px;
+        margin-left: 8px;
     }
 }
 
