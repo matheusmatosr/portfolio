@@ -7,6 +7,17 @@
     }
 }
 
+@media (max-width:1900px) and (min-width: 1200px) {
+    .info-sobremim h1 {
+        margin-left: 55px;
+    }
+    
+    .info-sobremim button {
+        margin-left: 15px;
+        width: 150px;
+    }
+}
+
 @media (max-width: 1180px) {
     .inicio {
         flex-direction: column;
@@ -213,6 +224,20 @@
 
     .projetos .git .github {
         font: 13px;
+    }
+
+    .info-sobremim h1 {
+        margin-left: 10px;
+    }
+
+    .info-sobremim button {
+        margin-left: 10px;
+        border: 1px solid #fff;
+    }
+    
+    .info-sobremim .list-buttons{
+        margin-left: 30px;
+        margin-top: 5px;
     }
 
     .contatos .info-contato .computador{
