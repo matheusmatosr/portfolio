@@ -287,6 +287,7 @@
         height: 42px;
         margin: 5px 5px;
         margin-left: 11px;
+        margin-top: -20px;
         margin-bottom: 15px;
     }
     .projetos .container-projetos .insta button {
@@ -294,15 +295,15 @@
         margin-top: 15px;
     }
     .projetos .container-projetos .breve button {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         margin-top: 15px;
     }
     .projetos .container-projetos .mario button {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         margin-top: 15px;
     }
     .projetos .container-projetos .enigma button {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         margin-top: 15px;
     }
 }
