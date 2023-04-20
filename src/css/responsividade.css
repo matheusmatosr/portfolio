@@ -290,16 +290,20 @@
         margin-bottom: 15px;
     }
     .projetos .container-projetos .insta button {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        margin-top: 15px;
     }
     .projetos .container-projetos .breve button {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        margin-top: 15px;
     }
     .projetos .container-projetos .mario button {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        margin-top: 15px;
     }
     .projetos .container-projetos .enigma button {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        margin-top: 15px;
     }
 }
 
