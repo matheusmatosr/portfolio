@@ -201,7 +201,7 @@
     #img-sobremim {
         height: 150px;
         width: 150px;
-        margin-top: 50px;
+        margin-top: 40px;
     }
 
     .info-sobremim {
@@ -236,7 +236,9 @@
         margin-top: 20px;
         margin-bottom: 8px;
     }
-
+    #img-sobremim {
+        margin-top: 40px;
+    }
     .info-sobremim button {
         margin-left: 10px;
         border: 1px solid #fff;
