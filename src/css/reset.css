@@ -9,8 +9,8 @@
 }
 
 :root {
-    --corheader: rgb(90, 15, 15);
-    --corfundo1: rgb(146, 17, 17);
-    --corfundo2: rgba(120, 16, 16);
-    --corbotaop: rgb(72, 17, 17);
+    --corheader: rgb(3, 4, 59);
+    --corfundo1: rgb(125, 159, 206);
+    --corfundo2: rgba(102, 102, 150);
+    --corbotaop: rgb(0, 0, 140);
 }
