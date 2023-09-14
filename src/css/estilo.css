@@ -428,3 +428,103 @@ header{
     flex-direction: column;
     justify-content: center;
 }
+
+/* Dark theme */
+input[type="checkbox"] {
+    display: none;
+}
+
+.bi-moon {
+  display: none;
+}
+
+.dark,
+.dark header {
+  background-color: var(--cordarkheader);
+  color: #fff;
+}
+
+.dark .ini {
+  background: linear-gradient(146deg, var(--cordark1) 50%, var(--cordark2) 50%);
+}
+
+.dark .s-sobremim {
+  background-color: var(--cordark1)
+}
+
+.dark .projetos .container-projetos div button {
+  background-color: var(--cordark1);
+  color: #000000;
+  border: 1px solid #040404;
+}
+
+.dark .projetos #ver {
+  background-color: var(--cordark2);
+  border: 1px solid #b3b3b3;
+  color: #ffffff;
+}
+
+.dark .bi-sun {
+  display: none;
+}
+
+.dark .bi-moon {
+  display: block;
+}
+
+.dark #botao-inicio:hover {
+  background-color: var(--cordarkbotao);
+}
+
+.dark .SobreMim button {
+  background-color: var(--cordark2);
+}
+
+.dark .SobreMim button:hover{
+  background-color: var(--cordarkbotao);
+}
+
+.dark .info-sobremim button {
+  border: 1px solid #fff;
+  background-color: var(--cordark2);
+}
+
+.dark .projetos {
+  background-color: var(--cordark2);
+}
+
+.dark .projetos #ver {
+  background-color: var(--cordark1);
+  border: 1px solid #868585;
+  color: #ffffff;
+}
+
+.dark .projetos #ver:hover {
+  background-color: var(--cordarkbotao);
+  color: #fff;
+  border: 1px solid #ffffff;
+}
+
+.dark .projetos .container-projetos div button {
+  background-color: var(--cordark1);
+  color: #ffffff;
+  border: 1px solid #868585;
+}
+
+.dark .projetos .container-projetos div button:hover {
+  background-color: var(--cordarkbotao);
+  color: #fff;
+  border: 1px solid #ffffff;
+}
+
+.dark .container-contatos{
+  background-color: var(--cordark2);
+}
+
+.dark .container-icons{
+  background-color: var(--cordark1);
+}
+
+.dark .rodape {
+  background-color: var(--cordarkheader);
+}
