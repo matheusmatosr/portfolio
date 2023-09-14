@@ -20,6 +20,30 @@
         margin-left: 75px;
         margin-top: 5px;
     }
+
+    .darklabel {
+        right: 10%; 
+    }
+}
+
+@media (max-width:1525px) and (min-width: 1270px) {
+    .darklabel {
+        right: 5%; 
+    }
+
+    .menu {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width:1270px) and (min-width: 1180px) {
+    .darklabel {
+        right: 2%; 
+    }
+    
+    .menu {
+        margin-right: 50px;
+    }
 }
 
 @media (max-width: 1180px) {
@@ -37,6 +61,14 @@
     #mauricio {
         margin-left: 400px;
         width: 30%;
+    }
+
+    .darklabel {
+        right: 2%; 
+    }
+    
+    .menu {
+        margin-right: 50px;
     }
 }
 
@@ -92,6 +124,16 @@
     .contatos .info-contato .computador{
         margin: auto;
         border-radius: 50px;
+    }
+}
+
+@media (max-width: 710px) {
+    .darklabel {
+        right: 2%; 
+    }
+    
+    .menu {
+        margin-right: 30px;
     }
 }
 
@@ -217,6 +259,16 @@
         padding: 7px;
         font-size: 10px;
     }
+
+    .darklabel {
+        right: 10%; 
+    }
+}
+
+@media (max-width: 580px) {
+    .darklabel {
+        right: 12%; 
+    }
 }
 
 @media (max-width: 510px) {
@@ -309,6 +361,10 @@
         margin-bottom: 25px;
         margin-top: 12px;
     }
+
+    .darklabel {
+        right: 15%; 
+    }
 }
 
 @media (max-width: 430px){
@@ -336,6 +392,10 @@
 
     #paragrafo {
         display: none;
+    }
+
+    .darklabel {
+        right: 18%; 
     }
 }
 
