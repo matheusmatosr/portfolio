@@ -337,6 +337,11 @@
     #paragrafo {
         display: none;
     }
+
+    .darklabel {
+        top: 30%; 
+        right: 20%; 
+    }
 }
 
 @media (max-width: 350px) {

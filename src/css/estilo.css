@@ -55,6 +55,12 @@ header{
     display: none;
 }
 
+.darklabel {
+    position: absolute;
+    top: 30%; 
+    right: 10%; 
+}
+
 #logo-m {
     padding: 9px;
     margin-left: 20px;
@@ -470,6 +476,10 @@ input[type="checkbox"] {
 
 .dark .bi-moon {
   display: block;
+}
+
+.dark #botao-inicio {
+    background-color: var(--cordark2);
 }
 
 .dark #botao-inicio:hover {
