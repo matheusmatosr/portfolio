@@ -55,12 +55,6 @@ header{
     display: none;
 }
 
-.darklabel {
-    position: absolute;
-    top: 30%; 
-    right: 10%; 
-}
-
 #logo-m {
     padding: 9px;
     margin-left: 20px;
@@ -435,7 +429,14 @@ header{
     justify-content: center;
 }
 
-/* Dark theme */
+/* ------ modo Dark ------ */
+
+.darklabel {
+    position: absolute;
+    top: 30%; 
+    right: 10%; 
+}
+
 input[type="checkbox"] {
     display: none;
 }
@@ -452,6 +453,10 @@ input[type="checkbox"] {
 
 .dark .ini {
   background: linear-gradient(146deg, var(--cordark1) 50%, var(--cordark2) 50%);
+}
+
+.dark .menu-responsivo {
+    background-color: var(--cordark2);
 }
 
 .dark .s-sobremim {
