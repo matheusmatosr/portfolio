@@ -338,12 +338,9 @@
         justify-content: center;
     }
     .icons{
-        width: 35px;
-        height: 42px;
-        margin: 5px 5px;
-        margin-left: 11px;
-        margin-top: -20px;
-        margin-bottom: 15px;
+        width: 50px;
+        height: 50px;
+        margin-top: 120px;
     }
     .projetos .container-projetos .insta button {
         margin-bottom: 20px;
