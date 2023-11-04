@@ -99,7 +99,7 @@ header{
 }
 
 .txt p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 #apresentacao{
@@ -346,6 +346,7 @@ header{
 }
 
 .contatos .info-contato .info-txt {
+    font-size: 22px;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -423,7 +424,7 @@ header{
     display: flex;
     justify-content: space-around;
     padding: 5px;
-    font-size: 13px;
+    font-size: 15px;
     height: 95px;
 }
 
