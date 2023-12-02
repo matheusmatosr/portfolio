@@ -48,7 +48,8 @@ const git = 'https://github.com/matheusmatosr?tab=repositories';
 const github = 'https://github.com/matheusmatosr';
 const matosflix = 'https://pre-alpha-codigo-safe.netlify.app';
 const financeiro = 'https://imaginative-pithivier-189a8e.netlify.app/';
-const museu = 'https://matheusmatosr.github.io/projeto-museu--HTML-CSS/';
+const sistemaRotinas = 'https://github.com/matheusmatosr/crud_csharp';
+const loja = 'https://github.com/matheusmatosr/loja-produtos-frontend';
 
 function chamarGithub2(){
     window.location = github;
@@ -65,8 +66,8 @@ function chamarPortifolio(){
 function chamarSistema(){
     window.location = sistema;
 }
-function chamarCovid(){
-    window.location = covid;
+function chamarLoja(){
+    window.location = loja;
 }
 function chamarGithub(){
     window.location = git;
@@ -77,6 +78,6 @@ function chamarMatosflix(){
 function chamarFinanceiro(){
     window.location = financeiro;
 }
-function chamarMuseu() {
-    window.location = museu;
+function chamarSistemaRotinas() {
+    window.location = sistemaRotinas;
 }
