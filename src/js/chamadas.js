@@ -46,7 +46,7 @@ const sistema = 'https://github.com/matheusmatosr/sistema-de-chamadas'
 const covid = 'https://matheusmatosr.github.io/Cuidados_covid---HTML-CSS/';
 const git = 'https://github.com/matheusmatosr?tab=repositories';
 const github = 'https://github.com/matheusmatosr';
-const matosflix = 'https://pre-alpha-codigo-safe.netlify.app';
+const matosflix = 'https://melodic-paprenjak-73f8f2.netlify.app/';
 const financeiro = 'https://imaginative-pithivier-189a8e.netlify.app/';
 const sistemaRotinas = 'https://github.com/matheusmatosr/crud_csharp';
 const loja = 'https://github.com/matheusmatosr/loja-produtos-frontend';
