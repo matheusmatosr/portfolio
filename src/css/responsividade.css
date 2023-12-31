@@ -172,6 +172,7 @@
         display: inline-block;
         text-align: start;
         margin: 15px;
+        margin-top: 18px;
     }
 
     .menu-responsivo {
@@ -257,6 +258,10 @@
 
     .rodape {
         padding: 7px;
+        font-size: 10px;
+    }
+
+    .rodape .direitos p {
         font-size: 10px;
     }
 

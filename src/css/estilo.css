@@ -435,6 +435,10 @@ header{
     justify-content: center;
 }
 
+.rodape .direitos p {
+    font-size: 12px;
+}
+
 /* ------ modo Dark ------ */
 
 .darklabel {
