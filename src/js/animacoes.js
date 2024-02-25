@@ -1,4 +1,3 @@
-
 function tipeWriter(element) {
     const texto = element.innerHTML.split('');
     element.innerText=''
@@ -13,7 +12,6 @@ const apresentacao = document.querySelector('#apresenta')
 tipeWriter(apresentacao)
 
 // Animar elementos da tela com atributo data-anima
-
 const item = document.querySelectorAll("[data-anima]");
 
 const animeScroll = () => {

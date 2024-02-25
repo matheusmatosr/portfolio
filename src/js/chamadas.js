@@ -1,5 +1,4 @@
 // Botão Ver Mais
-
 const escondido = document.getElementById('div-escondido');
 const ver = document.getElementById('ver');
 
@@ -14,7 +13,6 @@ function vermais() {
 }
 
 // Botões do menu responsivo
-
 function openMenu() {
     document.querySelector(".menu-responsivo").style.height = '100%';
     document.querySelector(".btn-menu").style.display='none';
@@ -38,7 +36,6 @@ function removerBtn() {
 }
 
 // Chamada dos botões de redes sociais e projetos
-
 const linkedin = 'https://www.linkedin.com/in/matheus-matos-1a523221b/';
 const instagram = 'https://www.instagram.com/mtzinnn7/'
 const portifolio = 'https://remarkable-flan-ac674a.netlify.app/';
