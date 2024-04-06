@@ -518,6 +518,14 @@ input[type="checkbox"] {
   background-color: var(--cordark2);
 }
 
+.dark .projetos h1 {
+  text-shadow: rgb(103, 103, 103) 2px 2px;
+}
+
+.dark .projetos .container-projetos div button {
+  border: 1px solid #ffffff;
+}
+
 .dark .projetos {
   background-color: var(--cordark2);
 }
@@ -548,6 +556,10 @@ input[type="checkbox"] {
 
 .dark .container-contatos{
   background-color: var(--cordark2);
+}
+
+.contatos h1 {
+  text-shadow: rgb(103, 103, 103) 2px 2px;
 }
 
 .dark .container-icons{
