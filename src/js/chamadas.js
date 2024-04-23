@@ -37,7 +37,6 @@ function removerBtn() {
 
 // Chamada dos botões de redes sociais e projetos
 const linkedin = 'https://www.linkedin.com/in/matheus-matos-1a523221b/';
-const instagram = 'https://www.instagram.com/mtzinnn7/'
 const portifolio = 'https://remarkable-flan-ac674a.netlify.app/';
 const sistema = 'https://sistema-de-chamadas.vercel.app/'
 const covid = 'https://matheusmatosr.github.io/Cuidados_covid---HTML-CSS/';
@@ -53,9 +52,6 @@ function chamarGithub2(){
 }
 function chamarlinkedin(){
     window.location = linkedin;
-}
-function chamarInstagram() {
-    window.location = instagram
 }
 function chamarPortifolio(){
     window.location = portifolio;
