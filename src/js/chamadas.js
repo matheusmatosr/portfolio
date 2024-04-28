@@ -43,7 +43,7 @@ const covid = 'https://matheusmatosr.github.io/Cuidados_covid---HTML-CSS/';
 const git = 'https://github.com/matheusmatosr?tab=repositories';
 const github = 'https://github.com/matheusmatosr';
 const matosflix = 'https://melodic-paprenjak-73f8f2.netlify.app/';
-const financeiro = 'https://imaginative-pithivier-189a8e.netlify.app/';
+const bike = 'https://loja-bike-five.vercel.app/';
 const sistemaRotinas = 'https://github.com/matheusmatosr/crud_csharp';
 const loja = 'https://github.com/matheusmatosr/loja-produtos-frontend';
 
@@ -68,8 +68,8 @@ function chamarGithub(){
 function chamarMatosflix(){
     window.location = matosflix;
 }
-function chamarFinanceiro(){
-    window.location = financeiro;
+function chamarBike(){
+    window.location = bike;
 }
 function chamarSistemaRotinas() {
     window.location = sistemaRotinas;
