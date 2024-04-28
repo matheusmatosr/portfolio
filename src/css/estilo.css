@@ -439,6 +439,11 @@ header{
     font-size: 12px;
 }
 
+.link-matheus {
+    text-decoration: none; 
+    color: inherit; 
+}
+
 /* ------ modo Dark ------ */
 
 .darklabel {
