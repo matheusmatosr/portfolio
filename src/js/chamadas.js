@@ -42,7 +42,7 @@ const sistema = 'https://sistema-de-chamadas.vercel.app/'
 const covid = 'https://matheusmatosr.github.io/Cuidados_covid---HTML-CSS/';
 const git = 'https://github.com/matheusmatosr?tab=repositories';
 const github = 'https://github.com/matheusmatosr';
-const matosflix = 'https://melodic-paprenjak-73f8f2.netlify.app/';
+const matosflix = 'https://matosflix.vercel.app/';
 const bike = 'https://loja-bike-five.vercel.app/';
 const sistemaRotinas = 'https://github.com/matheusmatosr/crud_csharp';
 const loja = 'https://github.com/matheusmatosr/loja-produtos-frontend';
