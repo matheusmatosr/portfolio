@@ -111,6 +111,7 @@ header{
     padding: 14px;
     margin-top: 25px;
     border: 1px solid #fff;
+    color: #fff;
     border-radius: 20px;
     transition-property: transform;
     transition-duration: 0.3s;
@@ -203,6 +204,11 @@ header{
     margin-left: 15px;
     color: black;
     text-shadow: rgb(255, 255, 255) 2px 2px;
+}
+
+.info-sobremim .info-tecnologias {
+    font-weight: bold;
+    color: #000;
 }
 
 .info-sobremim button {
@@ -333,7 +339,7 @@ header{
 }
 
 .contatos h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     text-shadow: black 2px 2px;
 }
@@ -351,6 +357,11 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.contatos .info-contato .info-txt .info-email{
+    margin-top: 5px;
+    font-weight: bold;
 }
 
 .contatos .info-contato .info-txt .div-icones {
@@ -482,18 +493,6 @@ input[type="checkbox"] {
   background-color: var(--cordark1)
 }
 
-.dark .projetos .container-projetos div button {
-  background-color: var(--cordark1);
-  color: #000000;
-  border: 1px solid #040404;
-}
-
-.dark .projetos #ver {
-  background-color: var(--cordark2);
-  border: 1px solid #b3b3b3;
-  color: #ffffff;
-}
-
 .dark .bi-sun {
   display: none;
 }
@@ -508,6 +507,8 @@ input[type="checkbox"] {
 
 .dark #botao-inicio:hover {
   background-color: var(--cordarkbotao);
+  color: #000;
+  border: 1px solid #000;
 }
 
 .dark .SobreMim button {
@@ -516,6 +517,16 @@ input[type="checkbox"] {
 
 .dark .SobreMim button:hover{
   background-color: var(--cordarkbotao);
+  color: #000;
+  border: 1px solid #000;
+}
+
+.dark .info-sobremim p {
+    color: #fff;
+}
+
+.dark .info-sobremim .info-tecnologias {
+    color: #fff;
 }
 
 .dark .info-sobremim button {
@@ -527,35 +538,31 @@ input[type="checkbox"] {
   text-shadow: rgb(103, 103, 103) 2px 2px;
 }
 
-.dark .projetos .container-projetos div button {
-  border: 1px solid #ffffff;
-}
-
 .dark .projetos {
   background-color: var(--cordark2);
 }
 
 .dark .projetos #ver {
   background-color: var(--cordark1);
-  border: 1px solid #868585;
+  border: 1px solid #ffffff;
   color: #ffffff;
 }
 
 .dark .projetos #ver:hover {
   background-color: var(--cordarkbotao);
-  color: #fff;
+  color: #000;
   border: 1px solid #ffffff;
 }
 
 .dark .projetos .container-projetos div button {
   background-color: var(--cordark1);
   color: #ffffff;
-  border: 1px solid #868585;
+  border: 1px solid #ffffff;
 }
 
 .dark .projetos .container-projetos div button:hover {
   background-color: var(--cordarkbotao);
-  color: #fff;
+  color: #000;
   border: 1px solid #ffffff;
 }
 
@@ -563,7 +570,7 @@ input[type="checkbox"] {
   background-color: var(--cordark2);
 }
 
-.contatos h1 {
+.dark .contatos h1 {
   text-shadow: rgb(103, 103, 103) 2px 2px;
 }
 
