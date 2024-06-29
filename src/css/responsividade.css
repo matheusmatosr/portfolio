@@ -103,7 +103,7 @@
     .txt {
         padding-left: 30px;
     }
-    
+
     .contatos .info-contato {
         display: flex;
         flex-direction: column;
@@ -134,6 +134,11 @@
     
     .menu {
         margin-right: 30px;
+    }
+
+    .icons{
+        width: 85px;
+        height: 85px;
     }
 }
 
@@ -251,6 +256,16 @@
         margin-left: 0;
     }
 
+    .icons-name,
+    .icons-name-js {
+        display: none;
+    }
+
+    .icons{
+        width: 75px;
+        height: 75px;
+    }
+
     .projetos .container-projetos {
         flex-direction: column;
         padding: 0 50px;
@@ -334,6 +349,7 @@
     .div-icons{
         height: 230px;
     }
+
     .div-icons h2{
         font-size: 30px;
         font-weight: bold;
@@ -342,23 +358,33 @@
         flex-direction: column;
         justify-content: center;
     }
+
     .icons{
         width: 50px;
         height: 50px;
         margin-top: 120px;
     }
+
+    .icons-name,
+    .icons-name-js {
+        display: none;
+    }
+
     .projetos .container-projetos .insta button {
         margin-bottom: 20px;
         margin-top: 12px;
     }
+
     .projetos .container-projetos .breve button {
         margin-bottom: 25px;
         margin-top: 12px;
     }
+
     .projetos .container-projetos .mario button {
         margin-bottom: 25px;
         margin-top: 12px;
     }
+
     .projetos .container-projetos .enigma button {
         margin-bottom: 25px;
         margin-top: 12px;

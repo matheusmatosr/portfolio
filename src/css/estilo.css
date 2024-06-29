@@ -428,6 +428,16 @@ header{
     transform: scale(1.3);
 }
 
+.icons-name {
+    display: flex;
+    margin-left: 30%;
+}
+
+.icons-name-js {
+    display: flex;
+    margin-left: 8%;
+}
+
 /* ------ rodapé -------- */
 
 .rodape {
