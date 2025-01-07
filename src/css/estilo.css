@@ -437,6 +437,11 @@ header{
     margin-left: 8%;
 }
 
+.icons-name-next {
+    display: flex;
+    margin-left: 25%;
+}
+
 /* ------ rodapé -------- */
 
 .rodape {

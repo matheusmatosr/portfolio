@@ -257,7 +257,8 @@
     }
 
     .icons-name,
-    .icons-name-js {
+    .icons-name-js,
+    .icons-name-next {
         display: none;
     }
 
@@ -366,7 +367,8 @@
     }
 
     .icons-name,
-    .icons-name-js {
+    .icons-name-js,
+    .icons-name-next {
         display: none;
     }
 
