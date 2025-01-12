@@ -11,7 +11,6 @@ function tipeWriter(element) {
 const apresentacao = document.querySelector('#apresenta')
 tipeWriter(apresentacao)
 
-// Animar elementos da tela com atributo data-anima
 const item = document.querySelectorAll("[data-anima]");
 
 const animeScroll = () => {
