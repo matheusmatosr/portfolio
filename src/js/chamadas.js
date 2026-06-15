@@ -45,7 +45,7 @@ const github = 'https://github.com/matheusmatosr';
 const the_movie = 'https://github.com/matheusmatosr/the_movie';
 const bike = 'https://loja-bike-five.vercel.app/';
 const sistemaRotinas = 'https://github.com/matheusmatosr/crud_csharp';
-const loja = 'https://github.com/matheusmatosr/loja-produtos-frontend';
+const distribuidora = 'https://github.com/matheusmatosr/distribuidora';
 const oficina = 'https://auto-tech-ten.vercel.app/';
 
 function chamarGithub2(){
@@ -60,8 +60,8 @@ function chamarMatosControl(){
 function chamarSistema(){
     window.location = sistema;
 }
-function chamarLoja(){
-    window.location = loja;
+function chamarDistribuidora(){
+    window.location = distribuidora;
 }
 function chamarGithub(){
     window.location = git;
