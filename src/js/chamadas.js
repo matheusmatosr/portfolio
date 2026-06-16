@@ -45,7 +45,7 @@ const github = 'https://github.com/matheusmatosr';
 const the_movie = 'https://github.com/matheusmatosr/the_movie';
 const bike = 'https://loja-bike-five.vercel.app/';
 const sistemaRotinas = 'https://github.com/matheusmatosr/crud_csharp';
-const distribuidora = 'https://github.com/matheusmatosr/distribuidora';
+const distribuidora = 'https://stockbebidas.vercel.app/';
 const oficina = 'https://auto-tech-ten.vercel.app/';
 
 function chamarGithub2(){
