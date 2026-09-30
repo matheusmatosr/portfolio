@@ -38,7 +38,7 @@ function removerBtn() {
 // Chamada dos botões de redes sociais e projetos
 const linkedin = 'https://www.linkedin.com/in/matheus-matos-1a523221b/';
 const matoscontrol = 'https://matoscontrol.netlify.app/';
-const sistema = 'https://sistema-de-chamadas.vercel.app/'
+const barbearia = 'https://sistema-barbearia-vertex.vercel.app/';
 const covid = 'https://matheusmatosr.github.io/Cuidados_covid---HTML-CSS/';
 const git = 'https://github.com/matheusmatosr?tab=repositories';
 const github = 'https://github.com/matheusmatosr';
@@ -57,8 +57,8 @@ function chamarlinkedin(){
 function chamarMatosControl(){
     window.location = matoscontrol;
 }
-function chamarSistema(){
-    window.location = sistema;
+function chamarBarbearia(){
+    window.location = barbearia;
 }
 function chamarDistribuidora(){
     window.location = distribuidora;
