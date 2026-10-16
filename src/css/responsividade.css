@@ -43,6 +43,10 @@
         gap: 24px;
     }
 
+    .projetos #div-escondido {
+        margin-top: 24px;
+    }
+
     .div-icons {
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }

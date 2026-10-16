@@ -411,6 +411,7 @@ input[type="checkbox"] {
 
 .projetos #div-escondido {
     display: none;
+    margin-top: 30px;
 }
 
 .projeto-card {
