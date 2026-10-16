@@ -71,7 +71,7 @@
 @media (max-width: 650px) {
 
     [data-anima="right"] {
-        transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-50px, 0, 0);
     }
 
     @keyframes slideInLeft {
@@ -168,7 +168,9 @@
 
     .info-sobremim p {
         font-size: 14px;
-        text-align: left;
+        text-align: justify;
+        hyphens: auto;
+        -webkit-hyphens: auto;
     }
 
     .info-sobremim .list-buttons {
@@ -177,11 +179,11 @@
 
     .projetos,
     .container-icons {
-        padding: 60px 0;
+        padding: 50px 0;
     }
 
     .contatos {
-        padding: 60px 20px;
+        padding: 64px 20px 50px;
     }
 
     .projetos h1,
@@ -217,10 +219,6 @@
     .icons {
         width: 40px;
         height: 40px;
-    }
-
-    .contatos {
-        padding: 0 20px 50px;
     }
 
     .contatos .info-contato .info-txt {
