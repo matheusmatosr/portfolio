@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/anima.css">
@@ -83,7 +83,9 @@
                     </p>
                     <button id="botao-inicio" class="botao" onclick="window.location.href='#sobremim'">Conheça-me melhor</button>
                </div>
-               <img id="mauricio" src="src/img/matheus.jpeg" alt="Foto Matheus">
+               <div class="foto-perfil">
+                   <img id="mauricio" src="src/img/matheus.jpeg" alt="Foto Matheus">
+               </div>
             </div>
         </section>
         <!--------- sobre mim ------------->
@@ -118,113 +120,159 @@
             </article>
         </section>
         <!--------  projetos ---------->
-        <section>
+        <section class="s-projetos secao-alt">
             <div class="projetos" id="projetos">
                 <h1 data-anima="up">Principais Projetos</h1>
                 <div class="container-projetos" data-anima="up">
-                    <div class="breve">
-                        <a href="https://sistema-barbearia-vertex.vercel.app/" target="_blank">
-                            <abbr title="Sistema de barbearia com agendamento de serviços e horários.">
-                                <img id="insta-img" src="src/img/barbearia.png" alt="Sistema de barbearia">
-                            </abbr>
+                    <!-- barbearia -->
+                    <div class="projeto-card">
+                        <a class="projeto-img" href="https://sistema-barbearia-vertex.vercel.app/" target="_blank">
+                            <img src="src/img/barbearia.png" alt="Sistema de barbearia">
                         </a>
-                        <button onclick="chamarBarbearia()">Sistema barbearia</button>
+                        <div class="projeto-corpo">
+                            <h3>Sistema de Barbearia</h3>
+                            <p>Agendamento online com áreas separadas para clientes, barbeiros e administração.</p>
+                            <ul class="projeto-destaques">
+                                <li><i class="bi bi-check-circle-fill"></i> Agendamento em etapas</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Agenda por barbeiro</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Painel financeiro</li>
+                            </ul>
+                            <a class="botao" href="https://sistema-barbearia-vertex.vercel.app/" target="_blank">Acessar projeto <i class="bi bi-arrow-up-right"></i></a>
+                        </div>
                     </div>
-                    <div class="insta">
-                        <a href="https://autotech-oficina.vercel.app/" target="_blank">
-                            <abbr title="Sistema de oficina">
-                                <img id="" src="src/img/autoTech.png" alt="Sistema de oficina">
-                            </abbr>
+                    <!-- oficina -->
+                    <div class="projeto-card">
+                        <a class="projeto-img" href="https://autotech-oficina.vercel.app/" target="_blank">
+                            <img src="src/img/autoTech.png" alt="Sistema de oficina">
                         </a>
-                        <button onclick="chamarSistemaOficina()">Sistema oficina</button>
+                        <div class="projeto-corpo">
+                            <h3>Sistema de Oficina</h3>
+                            <p>Gestão completa de oficinas mecânicas: clientes, veículos, ordens de serviço e faturamento.</p>
+                            <ul class="projeto-destaques">
+                                <li><i class="bi bi-check-circle-fill"></i> Ordens de serviço</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Orçamentos e peças</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Dashboard com gráficos</li>
+                            </ul>
+                            <a class="botao" href="https://autotech-oficina.vercel.app/" target="_blank">Acessar projeto <i class="bi bi-arrow-up-right"></i></a>
+                        </div>
                     </div>
-                    <div class="insta">
-                        <a href="https://stockbebidas.vercel.app/" target="_blank">
-                            <abbr title="Sistema completo para distribuidora de bebidas, com registro de vendas, controle de estoque e relatórios de faturamento.">
-                                <img src="src/img/distribuidora.png" alt="Sistema distribuidora">
-                            </abbr>
+                    <!-- distribuidora -->
+                    <div class="projeto-card">
+                        <a class="projeto-img" href="https://stockbebidas.vercel.app/" target="_blank">
+                            <img src="src/img/distribuidora.png" alt="Sistema distribuidora">
                         </a>
-                        <button onclick="chamarDistribuidora()">Sistema distribuidora</button>
+                        <div class="projeto-corpo">
+                            <h3>Sistema Distribuidora</h3>
+                            <p>Gestão de estoque e vendas para distribuidoras de bebidas, com PDV e relatórios.</p>
+                            <ul class="projeto-destaques">
+                                <li><i class="bi bi-check-circle-fill"></i> PDV de vendas</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Alertas de estoque baixo</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Relatórios de faturamento</li>
+                            </ul>
+                            <a class="botao" href="https://stockbebidas.vercel.app/" target="_blank">Acessar projeto <i class="bi bi-arrow-up-right"></i></a>
+                        </div>
                     </div>
                 </div>
                 <!---------------- projetos escondidos ----------------->
-                <div class="container-projetos" id="div-escondido" data-anima="up">
-                    <div class="insta">
-                        <a href="https://github.com/matheusmatosr/crud_csharp" target="_blank">
-                            <abbr title="Sistema de Rotinas">
-                                <img id="breve-img" src="src/img/sistemaRotinas.png" alt="Sistema de rotinas">
-                            </abbr>
+                <div class="container-projetos" id="div-escondido">
+                    <!-- rotinas -->
+                    <div class="projeto-card">
+                        <a class="projeto-img" href="https://github.com/matheusmatosr/gestao_de_rotina" target="_blank">
+                            <img src="src/img/sistemaRotinas.png" alt="Sistema de rotinas">
                         </a>
-                        <button onclick="chamarSistemaRotinas()">Sistema de rotinas</button>
+                        <div class="projeto-corpo">
+                            <h3>Sistema de Rotinas</h3>
+                            <p>Aplicação em C# para gestão de usuários e das rotinas e horários de cada um.</p>
+                            <ul class="projeto-destaques">
+                                <li><i class="bi bi-check-circle-fill"></i> Login e cadastro</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Rotinas por usuário</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Banco SQLite</li>
+                            </ul>
+                            <a class="botao" href="https://github.com/matheusmatosr/gestao_de_rotina" target="_blank">Ver no GitHub <i class="bi bi-arrow-up-right"></i></a>
+                        </div>
                     </div>
-                    <div class="breve">
-                        <a href="https://loja-bike-five.vercel.app/" target="_blank">
-                            <abbr title="Loja de bicicleta">
-                                <img id="" src="src/img/bike.png" alt="Loja de bicicleta">
-                            </abbr>
+                    <!-- bike -->
+                    <div class="projeto-card">
+                        <a class="projeto-img" href="https://loja-bike-five.vercel.app/" target="_blank">
+                            <img src="src/img/bike.png" alt="Loja de bicicleta">
                         </a>
-                        <button onclick="chamarBike()">Loja de bicicleta</button>
+                        <div class="projeto-corpo">
+                            <h3>Loja de Bicicleta</h3>
+                            <p>Site da Bikcraft, loja de bicicletas elétricas, com catálogo, seguros e orçamento.</p>
+                            <ul class="projeto-destaques">
+                                <li><i class="bi bi-check-circle-fill"></i> Catálogo de bicicletas</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Planos de seguro</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Formulário de orçamento</li>
+                            </ul>
+                            <a class="botao" href="https://loja-bike-five.vercel.app/" target="_blank">Acessar projeto <i class="bi bi-arrow-up-right"></i></a>
+                        </div>
                     </div>
-                    <div class="enigma">
-                        <a href="https://matoscontrol.netlify.app/" target="_blank">
-                            <abbr title="Plataforma para gestão de clientes, vendas e orçamentos.">
-                                <img id="mario-img" src="src/img/matoscontrol.png" alt="MatosControl">
-                            </abbr>
+                    <!-- matoscontrol -->
+                    <div class="projeto-card">
+                        <a class="projeto-img" href="https://matoscontrol.netlify.app/" target="_blank">
+                            <img src="src/img/matoscontrol.png" alt="MatosControl">
                         </a>
-                        <button onclick="chamarMatosControl()">MatosControl</button>
+                        <div class="projeto-corpo">
+                            <h3>MatosControl</h3>
+                            <p>Plataforma para gestão de clientes, vendas e orçamentos.</p>
+                            <ul class="projeto-destaques">
+                                <li><i class="bi bi-check-circle-fill"></i> Dashboard de vendas</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Gestão de clientes</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Autenticação</li>
+                            </ul>
+                            <a class="botao" href="https://matoscontrol.netlify.app/" target="_blank">Acessar projeto <i class="bi bi-arrow-up-right"></i></a>
+                        </div>
                     </div>
                 </div>
                 <!---------------- projetos escondidos / end ----------------->
-                <div data-anima="up">
+                <div class="projetos-rodape" data-anima="up">
                     <button onclick="vermais()" id="ver" class="buttonVerMais">ver mais</button>
-                </div>
-                <div class="git" data-anima="up">
-                    <button class="github" onclick="chamarGithub()">Repositórios no Github</button>
+                    <button class="github" onclick="chamarGithub()"><i class="bi bi-github"></i> Repositórios no Github</button>
                 </div>
             </div>
         </section>
 
         <!-- linguagens -->
         <section class="container-icons">
-            <div class="div-icons" id="div-icons" data-anima="left">
-                <h2 data-anima="down">Tecnologias</h2>
-                <div>
-                    <a target="_blank"><img class="icons" src="src/img/js.png" alt="icone do Javascript"></a>
-                    <span class="icons-name-js">Javascript</span>
+            <h2 data-anima="down">Tecnologias</h2>
+            <div class="div-icons" id="div-icons" data-anima="up">
+                <div class="tech">
+                    <img class="icons" src="src/img/js.png" alt="ícone do Javascript">
+                    <span>Javascript</span>
                 </div>
-                <div>
-                    <a target="_blank"><img class="icons" src="src/img/react.png" alt="icone do react"></a>
-                    <span class="icons-name">React</span>
+                <div class="tech">
+                    <img class="icons" src="src/img/react.png" alt="ícone do React">
+                    <span>React</span>
                 </div>
-                <div>
-                    <a target="_blank"><img class="icons" src="src/img/typescript.png" alt="icone do typescript"></a>
-                    <span class="icons-name-js">TypeScript</span>
+                <div class="tech">
+                    <img class="icons" src="src/img/typescript.png" alt="ícone do TypeScript">
+                    <span>TypeScript</span>
                 </div>
-                <div>
-                    <a target="_blank"><img class="icons" src="src/img/nextjs.png" alt="icone do nextjs"></a>
-                    <span class="icons-name-next">NextJs</span>
+                <div class="tech">
+                    <img class="icons" src="src/img/nextjs.png" alt="ícone do NextJS">
+                    <span>NextJS</span>
                 </div>
-                <div>
-                    <a target="_blank"><img class="icons" src="src/img/nestjs.svg" alt="icone do nextjs"></a>
-                    <span class="icons-name-next">NestJs</span>
+                <div class="tech">
+                    <img class="icons" src="src/img/nestjs.svg" alt="ícone do NestJS">
+                    <span>NestJS</span>
                 </div>
-                <div>
-                    <a target="_blank"><img class="icons" src="src/img/node.png" alt="icone do Javascript"></a>
-                    <span class="icons-name-js">NodeJS</span>
+                <div class="tech">
+                    <img class="icons" src="src/img/node.png" alt="ícone do NodeJS">
+                    <span>NodeJS</span>
                 </div>
-                <div>
-                    <a target="_blank"><img class="icons" src="src/img/python.webp" alt="icone do python"></a>
-                    <span class="icons-name-next">Pyhton</span>
+                <div class="tech">
+                    <img class="icons" src="src/img/python.webp" alt="ícone do Python">
+                    <span>Python</span>
                 </div>
-                <div>
-                    <a target="_blank"><img class="icons" src="src/img/csharp.webp" alt="icone do csharp"></a>
-                    <span class="icons-name-next">CSharp</span>
+                <div class="tech">
+                    <img class="icons" src="src/img/csharp.webp" alt="ícone do C#">
+                    <span>C#</span>
                 </div>
             </div>
         </section>
         
         <!------ contatos -------->
-        <section class="container-contatos">
+        <section class="container-contatos secao-alt">
             <div class="contatos" id="contatos">
                 <h1 data-anima="down">
                     Contatos

@@ -3,18 +3,66 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    color: aliceblue;
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
+button {
+    font-family: inherit;
+    color: inherit;
+}
+
+/* tema claro */
 :root {
-    --corheader: rgb(3, 4, 59);
-    --corfundo1: rgb(125, 159, 206);
-    --corfundo2: rgba(102, 102, 150);
-    --corbotaop: rgb(0, 0, 140);
-    --cordarkbotao: rgb(204, 204, 208);
-    --cordark1: rgb(117, 117, 117);
-    --cordark2: rgb(18, 18, 19);
-    --cordarkheader: rgb(26,32,38);
+    --cor-fundo: #ffffff;
+    --cor-fundo-inicio: linear-gradient(135deg, #fff7ed 0%, #fde3cb 100%);
+    --cor-card: #ffffff;
+    --cor-borda: #eadfd1;
+    --cor-texto: #1f1b16;
+    --cor-texto-suave: #5f574d;
+    --cor-destaque: #ea580c;
+    --cor-destaque-hover: #c2410c;
+    --cor-destaque-suave: rgba(234, 88, 12, 0.12);
+    --cor-rodape: #1f1b16;
+    --sombra: 0 10px 30px rgba(31, 27, 22, 0.08);
+    --sombra-forte: 0 20px 45px rgba(31, 27, 22, 0.16);
+}
+
+/* seções alternadas (projetos e contatos) */
+.secao-alt {
+    --cor-fundo: #f3e8da;
+    --cor-borda: #e2d3c0;
+}
+
+/* tema escuro */
+body.dark {
+    --cor-fundo: #141311;
+    --cor-fundo-inicio: linear-gradient(135deg, #1c1a17 0%, #121110 100%);
+    --cor-card: #24211e;
+    --cor-borda: #36312c;
+    --cor-texto: #f5f1ea;
+    --cor-texto-suave: #b4aca1;
+    --cor-destaque: #fb923c;
+    --cor-destaque-hover: #fdba74;
+    --cor-destaque-suave: rgba(251, 146, 60, 0.12);
+    --cor-rodape: #0b0a09;
+    --sombra: 0 10px 30px rgba(0, 0, 0, 0.35);
+    --sombra-forte: 0 20px 45px rgba(0, 0, 0, 0.5);
+}
+
+body.dark .secao-alt {
+    --cor-fundo: #1e1c19;
+    --cor-card: #2b2824;
+    --cor-borda: #3a352f;
+}
+
+/* cabeçalho e rodapé: sempre escuros */
+header,
+.rodape {
+    --cor-fundo: var(--cor-rodape);
+    --cor-texto: #f5f1ea;
+    --cor-texto-suave: #b4aca1;
+    --cor-borda: rgba(255, 255, 255, 0.12);
+    --cor-destaque: #fb923c;
+    --cor-destaque-suave: rgba(251, 146, 60, 0.15);
+    color: var(--cor-texto);
 }

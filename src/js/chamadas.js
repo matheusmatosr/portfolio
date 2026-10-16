@@ -3,8 +3,8 @@ const escondido = document.getElementById('div-escondido');
 const ver = document.getElementById('ver');
 
 function vermais() {
-    if (escondido.style.display == "none") {
-    escondido.style.display='flex';
+    if (getComputedStyle(escondido).display == "none") {
+    escondido.style.display='grid';
     ver.innerHTML='ver menos';
     } else {
         escondido.style.display='none';
@@ -35,18 +35,10 @@ function removerBtn() {
     }
 }
 
-// Chamada dos botões de redes sociais e projetos
+// Chamada dos botões de redes sociais
 const linkedin = 'https://www.linkedin.com/in/matheus-matos-1a523221b/';
-const matoscontrol = 'https://matoscontrol.netlify.app/';
-const barbearia = 'https://sistema-barbearia-vertex.vercel.app/';
-const covid = 'https://matheusmatosr.github.io/Cuidados_covid---HTML-CSS/';
 const git = 'https://github.com/matheusmatosr?tab=repositories';
 const github = 'https://github.com/matheusmatosr';
-const the_movie = 'https://github.com/matheusmatosr/the_movie';
-const bike = 'https://loja-bike-five.vercel.app/';
-const sistemaRotinas = 'https://github.com/matheusmatosr/crud_csharp';
-const distribuidora = 'https://stockbebidas.vercel.app/';
-const oficina = 'https://autotech-oficina.vercel.app/';
 
 function chamarGithub2(){
     window.location = github;
@@ -54,27 +46,6 @@ function chamarGithub2(){
 function chamarlinkedin(){
     window.location = linkedin;
 }
-function chamarMatosControl(){
-    window.location = matoscontrol;
-}
-function chamarBarbearia(){
-    window.location = barbearia;
-}
-function chamarDistribuidora(){
-    window.location = distribuidora;
-}
 function chamarGithub(){
     window.location = git;
-}
-function chamarTheMovie(){
-    window.location = the_movie;
-}
-function chamarBike(){
-    window.location = bike;
-}
-function chamarSistemaRotinas() {
-    window.location = sistemaRotinas;
-}
-function chamarSistemaOficina(){
-    window.location = oficina;
 }

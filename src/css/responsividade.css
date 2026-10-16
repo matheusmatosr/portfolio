@@ -1,144 +1,70 @@
 /*    responsividade     */
 
-@media (min-width:2570px) {
-    #mauricio {
-        width: 30%;
-        margin-left: 50px;
-    }
-}
-
-@media (max-width:1900px) and (min-width: 1200px) {
-    .info-sobremim h1 {
-        margin-left: 55px;
-    }
-    
-    .info-sobremim button {
-        margin-left: 15px;
-        width: 150px;
-    }
-    .info-sobremim .list-buttons{
-        margin-left: 75px;
-        margin-top: 5px;
-    }
-
-    .darklabel {
-        right: 10%; 
-    }
-}
-
-@media (max-width:1525px) and (min-width: 1270px) {
-    .darklabel {
-        right: 5%; 
-    }
-
-    .menu {
-        margin-right: 50px;
-    }
-}
-
-@media (max-width:1270px) and (min-width: 1180px) {
-    .darklabel {
-        right: 2%; 
-    }
-    
-    .menu {
-        margin-right: 50px;
-    }
-}
-
 @media (max-width: 1180px) {
     .inicio {
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 16% 50px 10%;
+        gap: 40px;
+    }
+
+    .inicio h1 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 960px) {
+    .inicio {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        padding: 120px 30px 60px;
     }
 
     .txt {
         width: 100%;
     }
-    
-    #mauricio {
-        margin-left: 400px;
-        width: 30%;
+
+    .foto-perfil {
+        --tam-foto: clamp(240px, 60vw, 340px);
     }
 
-    .darklabel {
-        right: 2%; 
-    }
-    
-    .menu {
-        margin-right: 50px;
-    }
-}
-
-@media (max-width: 860px) {
-
-    #mauricio {
-        margin-left: 200px;
-        width: 25%;
+    .SobreMim {
+        flex-direction: column;
+        gap: 40px;
+        padding: 100px 40px;
     }
 
     #img-sobremim {
-        height: 150px;
-    }
-
-    .contatos .info-contato .info-txt {
-        font-size: 15px;
-        margin-left: 30px;
-    }
-
-    .contatos .info-contato .computador{
-        height: 200px;
-        border-radius: 50px;
+        max-width: 60%;
+        width: 260px;
     }
 
     .projetos .container-projetos {
-        padding: 0 19px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 30px;
+        gap: 24px;
     }
 
-}
-
-@media (max-width: 780px) {
-    .txt {
-        padding-left: 30px;
-    }
-
-    .contatos .info-contato {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .contatos .info-contato .info-txt {
-        margin: 0;
-        text-align: center;
-    }
-
-    .contatos .info-contato .info-txt .div-icones {
-        padding: 20px;
-        margin: auto;
-        justify-content: space-evenly;
+    .div-icons {
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .contatos .info-contato .computador{
-        margin: auto;
-        border-radius: 50px;
+        height: 220px;
+        border-radius: 40px;
     }
 }
 
-@media (max-width: 710px) {
-    .darklabel {
-        right: 2%; 
-    }
-    
-    .menu {
-        margin-right: 30px;
+@media (max-width: 780px) {
+    .contatos .info-contato {
+        flex-direction: column;
     }
 
-    .icons{
-        width: 85px;
-        height: 85px;
+    .contatos .info-contato .info-txt {
+        text-align: center;
+        align-items: center;
+    }
+
+    .contatos .info-contato .info-txt .div-icones {
+        justify-content: center;
     }
 }
 
@@ -152,7 +78,7 @@
         from {
             transform: translateX(-100px);
         }
-    
+
         to {
             transform: translateX(0px);
         }
@@ -163,21 +89,19 @@
     }
 
     #logo-m {
-        margin-top: 5px;
+        margin-left: 15px;
         padding: 0px;
         width: 50px;
         height: 50px;
     }
-    
+
     .menu-padrao {
         display: none;
     }
 
     .btn-menu {
         display: inline-block;
-        text-align: start;
-        margin: 15px;
-        margin-top: 20px;
+        margin: 12px 15px;
     }
 
     .menu-responsivo {
@@ -190,7 +114,7 @@
         position: fixed;
         left: 0;
         top: 0;
-        background-color: rgba(125, 159, 206);
+        background-color: var(--cor-fundo);
         backdrop-filter: blur(3px);
     }
 
@@ -202,6 +126,7 @@
         text-align: center;
         padding: 0px;
     }
+
     .menu a {
         font-size: 25px;
     }
@@ -211,239 +136,92 @@
         top: -7px;
         right: 15px;
         font-size: 50px;
+        cursor: pointer;
     }
 
     .inicio {
-        padding: 120px 0px 50px 30px;
+        padding: 100px 20px 50px;
     }
 
     .inicio h1 {
         font-size: 25px;
     }
 
-    .txt {
-        padding-left: 0px;
-        width: 100%;
+    .txt p {
+        font-size: 1.05rem;
     }
 
-    .txt p {
-        font-size: 1rem;
+    .foto-perfil::before {
+        inset: -12px;
     }
 
     .SobreMim {
-        display: flex;
-        flex-direction: column;
-        padding: 80px 50px;
+        padding: 80px 20px;
     }
 
-    .SobreMim h1 {
-        font-size: 30px;
-        margin-top: 10px;
+    .SobreMim h1,
+    .projetos h1,
+    .contatos h1,
+    .container-icons h2 {
+        font-size: 28px;
     }
 
     .info-sobremim p {
-        font-size: 12px;
-        margin-top: 5px;
+        font-size: 14px;
+        text-align: left;
     }
 
-    #img-sobremim {
-        height: 150px;
-        width: 150px;
-        margin-top: 40px;
-    }
-
-    .info-sobremim {
-        margin-left: 0;
-    }
-
-    .icons-name,
-    .icons-name-js,
-    .icons-name-next {
-        display: none;
-    }
-
-    .icons{
-        width: 75px;
-        height: 75px;
+    .info-sobremim .list-buttons {
+        justify-content: center;
     }
 
     .projetos .container-projetos {
-        flex-direction: column;
-        padding: 0 50px;
+        grid-template-columns: 1fr;
+        padding: 10px 20px;
     }
 
-    .rodape {
-        padding: 7px;
-        font-size: 10px;
+    .div-icons {
+        padding: 0 20px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
     }
 
-    .rodape .direitos p {
-        font-size: 10px;
+    .icons {
+        width: 46px;
+        height: 46px;
     }
 
-    .darklabel {
-        right: 10%; 
-    }
-}
-
-@media (max-width: 580px) {
-    .darklabel {
-        right: 12%; 
-    }
-}
-
-@media (max-width: 510px) {
-
-    #mauricio {
-        width: 40%;
-        margin-left: 150px;
-        overflow: hidden;
+    .contatos {
+        padding: 0 20px 50px;
     }
 
-    .projetos .git .github {
-        font: 13px;
-    }
-
-    .info-sobremim h1 {
-        margin-left: 5px;
-        margin-top: 20px;
-        margin-bottom: 8px;
-    }
-    #img-sobremim {
-        margin-top: 40px;
-    }
-    .info-sobremim button {
-        margin-left: 10px;
-        border: 1px solid #fff;
-    }
-    
-    .info-sobremim .list-buttons{
-        margin-left: 0;
-        margin-top: 10px;
-
-        display: flex;
-        justify-content: center;
-        gap: 8px;
-        flex-wrap: nowrap;
+    .contatos .info-contato .info-txt {
+        font-size: 17px;
     }
 
     .contatos .info-contato .computador{
-        height: 150px;
+        height: 160px;
         border-radius: 30px;
     }
 
-    .contatos .info-contato {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        font-size: 10px;
-    }
-
-    .contatos .info-contato .info-txt .div-icones {
-        padding: 15px;
-        width: 200px;
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .contatos .info-contato .info-txt .icones {
-        height: 30px;
-        transition-duration: 0.3s;
-        transition-delay: 0s;
-    }
-
-    .div-icons{
-        height: 230px;
-    }
-
-    .div-icons h2{
-        font-size: 30px;
-        font-weight: bold;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .icons{
-        width: 50px;
-        height: 50px;
-        margin-top: 120px;
-    }
-
-    .icons-name,
-    .icons-name-js,
-    .icons-name-next {
-        display: none;
-    }
-
-    .projetos .container-projetos .insta button {
-        margin-bottom: 20px;
-        margin-top: 12px;
-    }
-
-    .projetos .container-projetos .breve button {
-        margin-bottom: 25px;
-        margin-top: 12px;
-    }
-
-    .projetos .container-projetos .mario button {
-        margin-bottom: 25px;
-        margin-top: 12px;
-    }
-
-    .projetos .container-projetos .enigma button {
-        margin-bottom: 25px;
-        margin-top: 12px;
-    }
-
-    .darklabel {
-        right: 15%; 
+    .rodape .direitos p {
+        font-size: 11px;
     }
 }
 
 @media (max-width: 430px){
 
-    li {
-        font-size: 12px;
+    .SobreMim button {
+        padding: 9px 16px;
+        font-size: 13px;
     }
 
-    .info-sobremim p {
-        text-align: justify;
-    }
-
-    .projetos h1 {
-        font-size: 25px;
-    }
-
-    .projetos .container-projetos div {
-        padding: 10px 10px 0 10px;
-    }
-
-    .contatos h1 {
-        font-size: 25px;
-        margin-bottom: 10px;
+    .contatos .info-contato .info-txt .div-icones a {
+        width: 48px;
+        height: 48px;
     }
 
     #paragrafo {
         display: none;
-    }
-
-    .darklabel {
-        right: 18%; 
-    }
-}
-
-@media (max-width: 350px) {
-
-    li {
-        font-size: 10px;
-    }
-
-}
-
-@media (max-width: 300px) {
-    #mauricio {
-        width: 30%;
     }
 }
