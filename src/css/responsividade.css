@@ -44,7 +44,7 @@
     }
 
     .div-icons {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
     .contatos .info-contato .computador{
@@ -156,7 +156,7 @@
     }
 
     .SobreMim {
-        padding: 80px 20px;
+        padding: 60px 20px;
     }
 
     .SobreMim h1,
@@ -175,20 +175,48 @@
         justify-content: center;
     }
 
+    .projetos,
+    .container-icons {
+        padding: 60px 0;
+    }
+
+    .contatos {
+        padding: 60px 20px;
+    }
+
+    .projetos h1,
+    .contatos h1,
+    .container-icons h2 {
+        margin-bottom: 32px;
+    }
+
     .projetos .container-projetos {
         grid-template-columns: 1fr;
-        padding: 10px 20px;
+        padding: 0 20px;
     }
 
     .div-icons {
-        padding: 0 20px;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 12px;
+        padding: 0 16px;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .div-icons .tech {
+        gap: 8px;
+        padding: 14px 4px;
+        border-radius: 14px;
+    }
+
+    .div-icons .tech span {
+        font-size: 11px;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        text-align: center;
     }
 
     .icons {
-        width: 46px;
-        height: 46px;
+        width: 40px;
+        height: 40px;
     }
 
     .contatos {
