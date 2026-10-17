@@ -11,6 +11,12 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* evita rolagem horizontal enquanto os elementos com data-anima ainda estão deslocados */
+main {
+    overflow-x: hidden;
+    overflow-x: clip;
+}
+
 ul{
     display: flex;
     margin: 0;
@@ -214,6 +220,12 @@ input[type="checkbox"] {
     margin-top: 15px;
 }
 
+.txt .hero-resumo {
+    margin-top: 14px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 #apresentacao::first-line {
     color: var(--cor-texto);
     font-weight: 500;
@@ -344,9 +356,29 @@ input[type="checkbox"] {
     font-size: 15.5px;
 }
 
-.info-sobremim .info-tecnologias {
+.info-sobremim .destaque {
     font-weight: 600;
     color: var(--cor-destaque);
+}
+
+/* tags de tecnologia dos projetos */
+.tags {
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tags li {
+    padding: 3px 10px;
+    cursor: default;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--cor-destaque);
+    background-color: var(--cor-destaque-suave);
+    border-radius: 999px;
+}
+
+.projeto-corpo .tags {
+    margin-bottom: 20px;
 }
 
 .info-sobremim .list-buttons{
@@ -541,47 +573,65 @@ input[type="checkbox"] {
     padding: 90px 0;
 }
 
-.div-icons{
+.tech-grupos {
     max-width: 1150px;
     margin: 0 auto;
     padding: 0 50px;
     display: grid;
-    grid-template-columns: repeat(8, minmax(0, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
 }
 
-.div-icons .tech {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    padding: 22px 10px;
+.tech-grupo {
+    padding: 24px 26px;
     background-color: var(--cor-card);
     border: 1px solid var(--cor-borda);
-    border-radius: 18px;
+    border-radius: 20px;
     box-shadow: var(--sombra);
+}
+
+.tech-grupo h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.tech-grupo h3 i {
+    color: var(--cor-destaque);
+}
+
+.tech-lista {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-lista li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    cursor: default;
+    font-size: 14px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 999px;
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.div-icons .tech:hover {
-    transform: translateY(-6px);
+.tech-lista li:hover {
+    transform: translateY(-3px);
     border-color: var(--cor-destaque);
 }
 
-.div-icons .tech span {
-    font-weight: 600;
-    font-size: 14px;
+.tech-lista i {
+    font-size: 20px;
+    line-height: 1;
 }
 
-.icons{
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    transition: 0.3s all ease-in-out;
-}
-
-.div-icons .tech:hover .icons{
-    transform: scale(1.1);
+.tech-lista .bi {
+    color: var(--cor-destaque);
 }
 
 /* ------   contatos   ------  */
@@ -706,8 +756,7 @@ input[type="checkbox"] {
     color: #1a1208;
 }
 
-.dark .icons {
-    padding: 6px;
-    border-radius: 14px;
-    background-color: #f5f1ea;
+/* ícones de marca escuros ficariam invisíveis no fundo escuro */
+.dark .tech-lista .icone-escuro {
+    color: var(--cor-texto);
 }

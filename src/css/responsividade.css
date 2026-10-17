@@ -47,8 +47,8 @@
         margin-top: 24px;
     }
 
-    .div-icons {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+    .tech-grupos {
+        padding: 0 30px;
     }
 
     .contatos .info-contato .computador{
@@ -172,22 +172,34 @@
 
     .info-sobremim p {
         font-size: 14px;
-        text-align: justify;
-        hyphens: auto;
-        -webkit-hyphens: auto;
+        text-align: left;
     }
 
     .info-sobremim .list-buttons {
         justify-content: center;
+        gap: 10px;
+    }
+
+    /* botões dividem a linha por igual, sem quebrar desalinhados */
+    .info-sobremim .list-buttons {
+        flex-wrap: nowrap;
+    }
+
+    .info-sobremim .list-buttons > * {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+    .info-sobremim .list-buttons button {
+        width: 100%;
+        justify-content: center;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 
     .projetos,
     .container-icons {
         padding: 50px 0;
-    }
-
-    .contatos {
-        padding: 64px 20px 50px;
     }
 
     .projetos h1,
@@ -201,28 +213,27 @@
         padding: 0 20px;
     }
 
-    .div-icons {
+    .tech-grupos {
         padding: 0 16px;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 10px;
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 
-    .div-icons .tech {
+    .tech-grupo {
+        padding: 18px;
+    }
+
+    .tech-lista {
         gap: 8px;
-        padding: 14px 4px;
-        border-radius: 14px;
     }
 
-    .div-icons .tech span {
-        font-size: 11px;
-        max-width: 100%;
-        overflow-wrap: anywhere;
-        text-align: center;
+    .tech-lista li {
+        padding: 6px 12px;
+        font-size: 13px;
     }
 
-    .icons {
-        width: 40px;
-        height: 40px;
+    .tech-lista i {
+        font-size: 17px;
     }
 
     .contatos .info-contato .info-txt {
@@ -242,7 +253,6 @@
 @media (max-width: 430px){
 
     .SobreMim button {
-        padding: 9px 16px;
         font-size: 13px;
     }
 
@@ -253,5 +263,11 @@
 
     #paragrafo {
         display: none;
+    }
+}
+
+@media (max-width: 360px) {
+    .info-sobremim .list-buttons {
+        flex-direction: column;
     }
 }
